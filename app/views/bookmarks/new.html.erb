@@ -1,0 +1,8 @@
+<h1>Add a Movie to <%= @list.name %></h1>
+<%= form_with model: [@list, @bookmark], local: true do |form| %>
+  <%= form.label :movie_id, "Choose a Movie" %>
+  <%= form.collection_select :movie_id, Movie.all, :id, :title %>
+  <%= form.label :comment %>
+  <%= form.text_area :comment %>
+  <%= form.submit "Add Bookmark" %>
+<% end %>
