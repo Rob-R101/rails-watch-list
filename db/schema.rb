@@ -25,14 +25,14 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_09_142923) do
   end
 
   create_table "lists", force: :cascade do |t|
-    t.string "name", null: false, unique: true
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "movies", force: :cascade do |t|
-    t.string "title", null: false, unique: true
-    t.text "overview", null: false
+    t.string "title"
+    t.text "overview"
     t.string "poster_url"
     t.decimal "rating"
     t.datetime "created_at", null: false
