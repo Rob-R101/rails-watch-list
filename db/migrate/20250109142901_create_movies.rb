@@ -1,11 +1,9 @@
 class CreateMovies < ActiveRecord::Migration[7.1]
   def change
-    create_table :movies do |t|
-      t.string :title
-      t.text :overview
-      t.string :poster_url
-      t.decimal :rating
-
+    create_table :bookmarks do |t|
+      t.references :movie, null: false, foreign_key: { on_delete: :restrict }
+      t.references :list, null: false, foreign_key: true
+      t.text :comment, null: false
       t.timestamps
     end
   end
