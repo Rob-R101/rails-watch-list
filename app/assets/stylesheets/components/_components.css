@@ -1,0 +1,25 @@
+/* Movie List Styling */
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.movie-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.movie-list li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.movie-list li a:hover {
+  text-decoration: underline;
+}

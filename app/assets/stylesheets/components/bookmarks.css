@@ -1,0 +1,35 @@
+/* Bookmarks Styling */
+
+.bookmarks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.bookmarks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.bookmarks li .bookmark-info {
+  flex: 1;
+}
+
+.bookmarks li .title {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.bookmarks li .comment {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.bookmarks li .actions {
+  display: flex;
+  gap: 10px;
+}
